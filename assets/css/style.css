@@ -1760,3 +1760,58 @@ p.copyright {
 	.multi-columns-row .col-lg-1:nth-child(12n + 13) { clear: left; }
 
 }
+
+/*------------------------------------------------------------------
+[Dev-Icons]
+*/
+
+.devicon-html5-original {
+	margin-top: 10px;
+  max-width: 6em;
+}
+
+.devicon-bootstrap-plain {
+	margin-top: 10px;
+  max-width: 6em;
+}
+
+.devicon-heroku-original {
+	margin-top: 10px;
+  max-width: 6em;
+}
+
+.devicon-css3-original {
+	margin-top: 10px;
+  max-width: 6em;
+}
+
+.devicon-github-original {
+	margin-top: 10px;
+  max-width: 6em;
+}
+
+.devicon-angular-original {
+	margin-top: 10px;
+	max-width: 6em;
+}
+
+.devicon-javascript-original {
+	margin-top: 10px;
+	max-width:	6em;
+}
+
+.devicon-jquery-original {
+	margin-top: 10px;
+	max-width:	6em;
+}
+
+.devicon-rails-plain {
+	margin-top: 10px;
+	max-width:	6em;
+}
+
+.devicon-ruby-original {
+	margin-top: 10px;
+	max-width:	6em;
+}
+
