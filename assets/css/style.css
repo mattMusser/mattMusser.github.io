@@ -312,6 +312,11 @@ p.copyright {
 	padding: 12px 48px;
 }
 
+.btn.btn-lg-resume {
+	font-size: 20px;
+	padding: 12px 48px;
+}
+
 .btn.btn-sm {
 	font-size: 12px;
 	padding: 6px 25px;
