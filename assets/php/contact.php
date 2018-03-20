@@ -1,11 +1,11 @@
 <?php
 
 	// Mail settings
-	$to      = "web-master72@yandex.ru";
+	$to      = "webdevelopmentlyspeaking@gmail.com";
 	$subject = "Test Contact Form";
 
 	// You can put here your email
-	$header = "From: noreply@parker.com\r\n";
+	$header = "From: webdevelopmentlyspeaking@gmail.com\r\n";
 	$header.= "MIME-Version: 1.0\r\n";
 	$header.= "Content-Type: text/plain; charset=utf-8\r\n";
 	$header.= "X-Priority: 1\r\n";
@@ -18,7 +18,7 @@
 
 		if (mail($to, $subject, $content, $header)) {
 			$result = array(
-				"message"    => "Thanks for contacting us.",
+				"message"    => "Thanks for contacting me.",
 				"sendstatus" => 1
 			);
 
