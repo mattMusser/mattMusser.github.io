@@ -13,7 +13,7 @@ Primary use: Resume, Portfolio
 body {
 	overflow-x: hidden;
 	-ms-overflow-style: scrollbar;
-	font-family: 'Source Sans Pro', serif;
+	font-family: 'Roboto', sans-serif;
 	line-height: 1.8;
 	font-size: 14px;
 	color: #565656;
@@ -196,7 +196,7 @@ p.copyright {
 .btn {
 	border-width: 2px;
 	padding: 9px 34px;
-	font-family: 'Source Sans Pro', serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	-webkit-transition: all 0.125s ease-in-out;
