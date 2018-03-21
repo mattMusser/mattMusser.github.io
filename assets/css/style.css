@@ -13,7 +13,7 @@ Primary use: Resume, Portfolio
 body {
 	overflow-x: hidden;
 	-ms-overflow-style: scrollbar;
-	font-family: 'Source Sans Pro', serif;
+	font-family: 'Roboto', sans-serif;
 	line-height: 1.8;
 	font-size: 14px;
 	color: #565656;
@@ -44,7 +44,7 @@ a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Source Sans Pro', serif;
+	font-family: 'Roboto', sans-serif;
 	margin: 0 0 25px;
 	line-height: 1.4;
 	font-weight: 400;
@@ -196,7 +196,7 @@ p.copyright {
 .btn {
 	border-width: 2px;
 	padding: 9px 34px;
-	font-family: 'Source Sans Pro', serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	-webkit-transition: all 0.125s ease-in-out;
@@ -743,6 +743,10 @@ p.copyright {
 	background-attachment: fixed;
 }
 
+.module-title {
+	text-shadow: 1px 1px 6px #fff, 2px 2px 5px #000;
+}
+
 .module-title,
 .module-subtitle {
 	margin: 0 0 70px;
@@ -823,6 +827,7 @@ p.copyright {
 	font-size: 60px;
 	margin: 0 0 20px;
 	color: #fff;
+	text-shadow: 6px 6px 8px #000, 3px 3px 5px #000;
 }
 
 @media (max-width: 992px) {
