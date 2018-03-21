@@ -743,6 +743,10 @@ p.copyright {
 	background-attachment: fixed;
 }
 
+.module-title {
+	text-shadow: 1px 1px 6px #fff, 2px 2px 5px #000;
+}
+
 .module-title,
 .module-subtitle {
 	margin: 0 0 70px;
