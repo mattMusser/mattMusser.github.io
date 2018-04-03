@@ -1842,3 +1842,14 @@ p.copyright {
 .resume {
 	margin-bottom: 70px;
 }
+
+iframe {
+	margin: 0 auto;
+	display:block;
+}
+
+@media  (max-width: 1000px){
+  iframe {
+		display: none;
+  }
+}
