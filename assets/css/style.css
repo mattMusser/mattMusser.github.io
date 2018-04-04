@@ -1,7 +1,7 @@
 /*------------------------------------------------------------------
 [Master Stylesheet]
 
-Project:     Parker
+Project:     Matt Musser
 Version:     1.1
 Last change:
 Primary use: Resume, Portfolio
@@ -1785,19 +1785,14 @@ p.copyright {
 [Dev-Icons]
 */
 
-.devicon-html5-original {
+.devicon-angular-original {
 	margin-top: 10px;
-  max-width: 6em;
+	max-width: 6em;
 }
 
 .devicon-bootstrap-plain {
 	margin-top: 10px;
-  max-width: 6em;
-}
-
-.devicon-heroku-original {
-	margin-top: 10px;
-  max-width: 6em;
+	max-width: 6em;
 }
 
 .devicon-css3-original {
@@ -1807,10 +1802,15 @@ p.copyright {
 
 .devicon-github-original {
 	margin-top: 10px;
-  max-width: 6em;
+	max-width: 6em;
 }
 
-.devicon-angular-original {
+.devicon-heroku-original {
+	margin-top: 10px;
+	max-width: 6em;
+}
+  
+.devicon-html5-original {
 	margin-top: 10px;
 	max-width: 6em;
 }
