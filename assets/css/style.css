@@ -1455,6 +1455,10 @@ p.copyright {
 	color: #aaa;
 }
 
+.profile-photo {
+	border-radius: 30px;
+}
+
 /*------------------------------------------------------------------
 [Testimonials]
 */
