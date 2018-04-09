@@ -1389,6 +1389,7 @@ p.copyright {
 
 .iconbox-icon:hover:after {
 	border-color: #cf9c63;
+	transition: scaled(1.2);
 	-webkit-transition: scale(1.2);
 	    -moz-transform: scale(1.2);
 	     -ms-transform: scale(1.2);
