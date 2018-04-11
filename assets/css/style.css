@@ -1864,11 +1864,27 @@ iframe {
 	box-shadow: 0px 0px 22px 1px rgba(0, 0, 0, 0.82);
 }
 
+.not-active {
+	pointer-events: none;
+	cursor: default;
+	text-decoration:none;
+	color: inherit;
+}
+
+
 @media  (max-width: 1000px){
 	.resume {
 		margin-top: -5em;
 	}
+
   iframe {
-		display: none;
-  }
+		position: absolute !important;
+		top: -9999px !important;
+		left: -9999px !important;
+	}
+
+	.not-active {
+		pointer-events: inherit;
+		cursor: pointer;
+	}
 }
