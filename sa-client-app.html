@@ -125,7 +125,7 @@
 							 financial reports. Users are able to up/down vote posts as well as favorite them.</p>
 						
 						<h3 class="underlined">Explanation</h3>
-						<p>The owner of <a href="https://www.shoffaccounting.com/" target="_blank">Shoff Accounting</a> needed an app in which he could give his 
+						<p>The owner of <a href="https://www.shoffaccounting.com/" target="_blank">Shoff Accounting</a>, Jonathan, needed an app in which he could give his 
 							 clients easy access to their financial reports instead of them having having to go back and search through their email inbox for the 
 							 emails he sends them containing the link(s) to the reports. He also needed client managment tools so he or an admin could add or remove 
 							 clients to and from the app and add links, to google spreadsheets containing financial reports, to a client's account.</p>
@@ -145,16 +145,33 @@
 						</ul>
 
 						<h3 class="underlined">Problem</h3>
-						<p></p>
+						<p>The major problem I ran into with this project was the the admin dashboard I wanted to implement to give him the client managment tools he needed. I first
+							 started by trying to create the admin dashboard from scratch but I wasn't able to get the functionality I needed and get it looking polished. </p>
 
 						<h3 class="underlined">Solution</h3>
-						<p></p>
+						<p>Seeking the advise of a fellow developer he pointed me to a gem called <a href="https://github.com/activeadmin/activeadmin">ActiveAdmin</a> which provides 
+							 an admin dashboard framework so I wouldn't have to struggle building one from scratch.</p>
+						
+						<p>To implment the tools to add/remove clients and to add links I had to create a file for users and links in the active admin directory to create the views 
+							 under ActiveAdmin. For the user dashboard view I created at table that provided him with information of each client and a link to remove the client on each row.
+							 Then to give him the ability to add clients I added a button in the top right of the dashboard that would send him to a new user form.</p>
+
+						<p>For the Links view I also created a table that showed each Client he had and the links associated with their account. For each user's row he I gave him links
+							 links that would let him edit or remove a link from a client's account. Just as I did with the Users view I added a button that would send him to a page with a form
+							 he could select a client based on their client id and add a link to their account.
+						</p>
 
 						<h3 class="underlined">Problem</h3>
-						<p></p>
+						<p>After creating the users and links views for the admin dashboard I ran into an issue where I wasn't able to create client, edit a client's information, or add a link
+							 to a client's account.</p>
 
 						<h3 class="underlined">Solution</h3>
-						<p></p>
+						<p>To solve this I turned to the docs for ActiveAdmin. In order to be able to change those attributes of a client I had to define which attributes could be changed by
+							 using <code>permit_params</code>. I was able to fix the user creation/edit issue by permiting the dashboard access to the <code>:client_name, :email, :password, 
+							 :password_confirmation</code> attributes. To get the Link functionality working I had to permit the dashboard access to <code>	permit_params :url, :user_id</code> 
+							 attributes.</p>
+						
+						
 
 						<h3 class="underlined">Built With</h3>
 						<ul>
@@ -170,17 +187,19 @@
 						</ul>
 						
 						<h3 class="underlined">Status</h3>
-						<p>Live – <a href="https://shoff-accounting-client-app.herokuapp.com" target="_blank">Shoff Accounting Client App</a></p>
+						<p>Live and being maintained – <a href="https://shoff-accounting-client-app.herokuapp.com" target="_blank">Shoff Accounting Client App</a></p>
+						<strong>For security reasons I'm not able to give access to the app's admin dashboard so I provided a demo video below.</strong>
 					</div>
 
 				</div>
-<!--
+
 				<div class="row">
 					<div class="col-sm-12">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/EMy5krGcoOU" frameborder="0" allowfullscreen></iframe>
+						<iframe width="630" height="394" src="https://www.useloom.com/embed/5ed4236669044b6e81196890f7cd6892" frameborder="0" 
+						 webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</div>
 				</div>
--->
+
 			</div>
 		</section>
 		<!-- /PORTFOLIO SINGLE -->
