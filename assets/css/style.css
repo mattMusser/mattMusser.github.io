@@ -76,6 +76,7 @@ h6 {
 }
 
 p {
+	font-size: 20px;
 	margin-bottom: 25px;
 }
 
@@ -97,8 +98,9 @@ p {
 	font-weight: 700;
 }
 
-.underlined {
+.underlined-heading {
 	text-decoration-line: underline;
+	text-align: center;
 }
 
 .h4 {
@@ -243,6 +245,10 @@ p.copyright {
 					width: 551px;
 }
 
+.btn.project-page-btn {
+	margin: 15px;
+}
+
 /* Button colors */
 
 .btn.btn-def,
@@ -324,7 +330,7 @@ p.copyright {
 	padding: 12px 48px;
 }
 
-.btn.btn-lg-resume {
+.btn.btn-xl {
 	font-size: 20px;
 	padding: 12px 48px;
 }

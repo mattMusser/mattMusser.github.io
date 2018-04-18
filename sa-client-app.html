@@ -129,18 +129,18 @@
 				<div class="row m-b-70">
 
 					<div class="col-sm-8 col-sm-offset-2">
-						<h3 class="underlined">About</h3>
+						<h3 class="underlined-heading">About</h3>
 						<p>Shoff Accounting Client App is a Ruby on Rails application that allows the admin to add/remove clients to the app, add links of 
 							 financial review spreadsheets to the respective client's profiles, and gives the clients of Shoff Accounting easy access to their 
 							 financial reports. Users are able to up/down vote posts as well as favorite them.</p>
 						
-						<h3 class="underlined">Explanation</h3>
+						<h3 class="underlined-heading">Explanation</h3>
 						<p>The owner of <a href="https://www.shoffaccounting.com/" target="_blank">Shoff Accounting</a>, Jonathan, needed an app in which he could give his 
 							 clients easy access to their financial reports instead of them having having to go back and search through their email inbox for the 
 							 emails he sends them containing the link(s) to the reports. He also needed client managment tools so he or an admin could add or remove 
 							 clients to and from the app and add links, to google spreadsheets containing financial reports, to a client's account.</p>
 
-						<h3 class="underlined">Starting Process</h3>
+						<h3 class="underlined-heading">Starting Process</h3>
 						<ul>
 							<li class="h4">Step 1</li>
 								<p>I started of this project by creating a new Rails app by running <code>rails new shoff-accounting --skip-test-unit</code> in the command line 
@@ -154,11 +154,11 @@
 									 a seperate controller and model for them so I would be able to add the functionality he wanted.</p>
 						</ul>
 
-						<h3 class="underlined">Problem</h3>
+						<h3 class="underlined-heading">Problem</h3>
 						<p>The major problem I ran into with this project was the the admin dashboard I wanted to implement to give him the client managment tools he needed. I first
 							 started by trying to create the admin dashboard from scratch but I wasn't able to get the functionality I needed and get it looking polished. </p>
 
-						<h3 class="underlined">Solution</h3>
+						<h3 class="underlined-heading">Solution</h3>
 						<p>Seeking the advise of a fellow developer he pointed me to a gem called <a href="https://github.com/activeadmin/activeadmin">ActiveAdmin</a> which provides 
 							 an admin dashboard framework so I wouldn't have to struggle building one from scratch.</p>
 						
@@ -171,11 +171,11 @@
 							 he could select a client based on their client id and add a link to their account.
 						</p>
 
-						<h3 class="underlined">Problem</h3>
+						<h3 class="underlined-heading">Problem</h3>
 						<p>After creating the users and links views for the admin dashboard I ran into an issue where I wasn't able to create client, edit a client's information, or add a link
 							 to a client's account.</p>
 
-						<h3 class="underlined">Solution</h3>
+						<h3 class="underlined-heading">Solution</h3>
 						<p>To solve this I turned to the docs for ActiveAdmin. In order to be able to change those attributes of a client I had to define which attributes could be changed by
 							 using <code>permit_params</code>. I was able to fix the user creation/edit issue by permiting the dashboard access to the <code>:client_name, :email, :password, 
 							 :password_confirmation</code> attributes. To get the Link functionality working I had to permit the dashboard access to <code>	permit_params :url, :user_id</code> 
@@ -183,7 +183,7 @@
 						
 						
 
-						<h3 class="underlined">Built With</h3>
+						<h3 class="underlined-heading">Built With</h3>
 						<ul>
 							<li>HTML5</li>
 							<li>CSS3</li>
@@ -196,11 +196,11 @@
 							<li>Bcrypt</li>
 						</ul>
 						
-						<h3 class="underlined">Status</h3>
+						<h3 class="underlined-heading">Status</h3>
 						<p>Live and being maintained – <a href="https://shoff-accounting-client-app.herokuapp.com" target="_blank">Shoff Accounting Client App</a> & 
 							 <a href="http://www.github.com/mattMusser/shoff-accounting-client-app" target="_blank">GitHub Repo</a></p>
 
-						<h3 class="underlined">Demo</h3>
+						<h3 class="underlined-heading">Demo</h3>
 						<p><i class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i><strong> To ensure the security of Shoff Accounting's clients I can not give access to the app's
 							 admin dashboard.</strong></p>
 						<iframe width="630" height="394" src="https://www.useloom.com/embed/5ed4236669044b6e81196890f7cd6892" frameborder="0" 
