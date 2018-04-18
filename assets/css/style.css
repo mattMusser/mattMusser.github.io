@@ -234,10 +234,13 @@ p.copyright {
 }
 
 .btn.btn-round {
-	-webkit-border-radius: 2px;
-	   -moz-border-radius: 2px;
-	     -o-border-radius: 2px;
-	        border-radius: 2px;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	     -o-border-radius: 5px;
+					border-radius: 5px;
+					box-shadow: 3px 3px #888888;
+					font-size: 20px;
+					width: 551px;
 }
 
 /* Button colors */
@@ -312,6 +315,7 @@ p.copyright {
 	background: transparent;
 	color: #111;
 }
+
 
 /* Button sizes */
 
